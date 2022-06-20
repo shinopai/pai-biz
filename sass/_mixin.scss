@@ -4,3 +4,46 @@
     @content;
   }
 }
+
+/* cv button */
+@mixin cv_btn() {
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-size: 22px;
+  border-radius: 100vh;
+  padding: 15px 10px;
+  width: 400px;
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+  background-image: linear-gradient(45deg, #ffb100 0%, #f55e31 100%);
+  border-bottom: solid 4px #b35008;
+  &:hover {
+    background-image: linear-gradient(45deg, #f55e31 0%, #ffb100 100%);
+    border-bottom: solid 4px #54290a;
+  }
+  span {
+    position: relative;
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      content: "\f105";
+      font-weight: 900;
+      position: absolute;
+      font-size: 25px;
+      top: calc(50% - 25px / 2);
+      right: -40px;
+    }
+  }
+}
+
+/* summary text */
+@mixin summary_txt() {
+  background-color: #fff786;
+  color: #fb4646;
+  border: 3px solid #fb4646;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  padding: 30px;
+  margin-top: 40px;
+  line-height: 1.4;
+}

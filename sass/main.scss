@@ -1,3 +1,260 @@
 @import "_breakpoints.scss";
 @import "_mixin.scss";
 @import "basic.scss";
+
+/* cv button */
+.cv-button {
+  @include cv_btn();
+}
+
+/* summary text */
+.summary-text {
+  @include summary_txt();
+}
+
+/* header */
+.mainvisual {
+  background: url("../images/bg_front01.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+.mainvisual__inner {
+  padding-top: 50px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.mainvisual__image--sitelogo {
+  width: 120px;
+  height: 40px;
+}
+.mainvisual__image--catch {
+  width: 55%;
+  max-width: 600px;
+  margin: 50px 0 20px;
+}
+.mainvisual__label {
+  color: #fff;
+  background-color: #14425c;
+  border-radius: 10px;
+  padding: 5px 8px;
+  font-size: 1.8rem;
+  margin: 3px;
+}
+.mainvisual__text--lead {
+  color: $basic-color;
+  font-size: 2rem;
+  display: inline-block;
+  margin-left: 5px;
+}
+.mainvisual__image--clowns {
+  width: 40%;
+  max-width: 500px;
+}
+.mainvisual__text {
+  color: #fff;
+  background-color: $basic-color;
+  font-size: 16px;
+  border-radius: 10px 10px 0 0;
+  width: fit-content;
+  padding: 12px 10px;
+  margin: 32px 0 0 10px;
+  letter-spacing: 0.05em;
+}
+.mainvisual__logos--wrap {
+  display: flex;
+  overflow-x: hidden;
+  margin-bottom: 50px;
+}
+.mainvisual__image--logos {
+  @keyframes infinity-scroll-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  animation: infinity-scroll-right 45s infinite linear 0.5s both;
+}
+
+/* main */
+
+/* strength section */
+.strength__flex--wrap {
+  justify-content: center;
+  gap: 30px;
+  width: 90%;
+  align-items: center;
+}
+.strength__flex--item {
+  width: 50%;
+  border-radius: 10px;
+  p {
+    padding-left: 15px;
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+}
+.strength__flex--left {
+  background-color: #ecf8f8;
+}
+.strength__flex--right {
+  background-color: #f8efec;
+}
+
+/* purpose section */
+.purpose {
+  background-color: #f7f7f7;
+}
+.purpose__flex--wrap {
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.purpose__flex--item {
+  background-color: #fff;
+  width: 30%;
+  border-radius: 10px;
+  .flex {
+    margin-top: initial;
+  }
+  img {
+    width: 64px;
+    height: 64px;
+  }
+}
+.purpose__flextext--first {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  padding-left: 15px;
+}
+.purpose__flextext--second {
+  background-color: #fff0e7;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  span {
+    background: linear-gradient(transparent 60%, #ffeb00 50%);
+  }
+}
+.purpose__text--black {
+  margin: 40px 0 30px;
+}
+.purpose__label {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #eb6100;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  & + p {
+    font-size: 1.3rem;
+    display: inline-block;
+  }
+}
+
+/* so section */
+.so__flex--wrap {
+  width: 90%;
+  gap: 30px;
+}
+.so__flex--item {
+  width: 50%;
+  align-items: center;
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  div {
+    padding-left: 15px;
+  }
+  p {
+    &:not(.flex-heading) {
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+  }
+}
+
+/* guide section */
+.guide {
+  background-color: #f1f7f7;
+}
+.guide__flex--wrap {
+  justify-content: space-between;
+}
+.guide__flex--item {
+  width: 32%;
+  background-color: #fff;
+  border-radius: 5px;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+  }
+  div {
+    position: relative;
+  }
+  .flex-heading {
+    line-height: 1.4;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+}
+.guide__flex--number {
+  font-size: 5rem;
+  position: absolute;
+  top: -0.2em;
+  right: 0;
+  font-family: "League Gothice";
+  color: #dadada;
+}
+
+/* comparison section */
+.comparison__flex--wrap {
+  width: 90%;
+  gap: 30px;
+}
+.comparison__flex--item {
+  width: 50%;
+  .flex-heading {
+    border-bottom: 3px solid #bcd0d2;
+    padding-bottom: 15px;
+  }
+}
+.comparison__flexlists {
+  font-size: 1.6rem;
+  li {
+    margin-top: 13px;
+    &:first-child {
+      margin-top: 25px;
+    }
+    &:nth-child(3) {
+      margin-top: 30px;
+    }
+  }
+}
+.comparison__flexlist--green {
+  color: #429c9d;
+  &::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    color: #429c9d;
+  }
+}
+.comparison__flexlist--red {
+  color: #db4545;
+  &::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    color: #db4545;
+  }
+}

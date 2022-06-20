@@ -5,28 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- style -->
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- font awesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      rel="stylesheet"
+    />
     <title>Pai Biz Top</title>
   </head>
   <body>
     <!-- header -->
     <header>
       <div class="mainvisual">
-        <div class="mainvisual__inner wrap">
-          <img
-            src="./images/logo_front01.svg"
-            alt="logo_front01"
-            srcset=""
-            class="mainvisual__image--sitelogo"
-          />
+        <div class="mainvisual__inner">
+          <h1>
+            <a href="#">
+              <img
+                src="./images/logo_front01.svg"
+                alt="logo_front01"
+                srcset=""
+                class="mainvisual__image--sitelogo"
+              />
+            </a>
+          </h1>
           <img
             src="./images/txt_front01.png"
             alt="txt_front01"
             srcset=""
             class="mainvisual__image--catch"
           />
-          <span class="mainvisual__text--merit">高品質</span>
-          <span class="mainvisual__text--merit">低価格</span>
+          <span class="mainvisual__label">高品質</span>
+          <span class="mainvisual__label">低価格</span>
           <p class="mainvisual__text--lead">様々な条件で制作会社が見つかる</p>
           <img
             src="./images/ico_front01.png"
@@ -34,7 +43,7 @@
             srcset=""
             class="mainvisual__image--clowns"
           />
-          <a href="#" class="mainvisual__link--cv"
+          <a href="#" class="cv-button font-bold text-center"
             ><span>無料で一括見積する</span></a
           >
           <p class="mainvisual__text">
@@ -42,6 +51,272 @@
           </p>
         </div>
       </div>
+      <div class="mainvisual__logos--wrap">
+        <img
+          src="./images/logo_front02.png"
+          alt="logo_front02"
+          srcset=""
+          class="mainvisual__image--logos"
+        />
+        <img
+          src="./images/logo_front02.png"
+          alt="logo_front02"
+          srcset=""
+          class="mainvisual__image--logos"
+        />
+      </div>
     </header>
+
+    <!-- main -->
+    <main>
+      <!-- strength -->
+      <section class="strength wrap">
+        <p class="strength__text--heading m-x-auto font-bold section-heading">
+          知ってますか？
+        </p>
+        <p
+          class="strength__text--leading text-center font-bold section-leading"
+        >
+          制作会社には品質を売りにしている会社と<br />安さを売りにしている会社があります
+        </p>
+        <div class="strength__flex--wrap flex m-x-auto">
+          <div class="strength__flex--left strength__flex--item flex-padding">
+            <h2 class="flex-heading">高品質を売りにする会社</h2>
+            <div class="flex">
+              <img src="./images/ico_front02.png" alt="ico_front02" srcset="" />
+              <p>
+                クライアントの目的に沿った課題を解決するための、クオリティの高いホームページ制作を行う会社で、デザインが良いだけでなく、集客やブランディングなどの戦略に強い特徴があります
+              </p>
+            </div>
+          </div>
+          <div class="strength__flex--right strength__flex--item flex-padding">
+            <h2 class="flex-heading">低価格を売りにする会社</h2>
+            <div class="flex">
+              <img src="./images/ico_front03.png" alt="ico_front03" srcset="" />
+              <p>
+                クライアントの予算内に合わせて、とにかく安くホームページを制作する会社で、従業員が少なく営業スタッフがいないような会社が多いという特徴があります
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- purpose -->
+      <section class="purpose">
+        <div class="purpose__inner wrap">
+          <p class="strength__text--heading m-x-auto font-bold section-heading">
+            さらに！
+          </p>
+          <p
+            class="strength__text--leading text-center font-bold section-leading"
+          >
+            ホームページの目的によって<br />制作会社の得意不得意が分かれます
+          </p>
+          <div class="purpose__flex--wrap flex m-x-auto">
+            <div class="purpose__flex--item flex-padding">
+              <div class="flex">
+                <img src="./images/ico_front03.png" alt="ico_front03" />
+                <p class="purpose__flextext--first">
+                  ブランドイメージの向上<br />認知度の向上
+                </p>
+              </div>
+              <p class="purpose__flextext--second text-center">
+                <span class="font-bold">デザイン</span>に強みを持つ会社
+              </p>
+            </div>
+            <div class="purpose__flex--item flex-padding">
+              <div class="flex">
+                <img src="./images/ico_front04.png" alt="ico_front04" />
+                <p class="purpose__flextext--first">
+                  アクセス数の増加<br />問合わせ数の増加
+                </p>
+              </div>
+              <p class="purpose__flextext--second text-center">
+                <span class="font-bold">集客</span>に強みを持つ会社
+              </p>
+            </div>
+            <div class="purpose__flex--item flex-padding">
+              <div class="flex">
+                <img src="./images/ico_front05.png" alt="ico_front03" />
+                <p class="purpose__flextext--first">
+                  商品の販売数の増加<br />業務効率の改善
+                </p>
+              </div>
+              <p class="purpose__flextext--second text-center">
+                <span class="font-bold">開発</span>に強みを持つ会社
+              </p>
+            </div>
+          </div>
+          <p class="purpose__text--black flex-heading text-center font-bold">
+            しかも！ホームページの種類や業界によっても得意不得意があります
+          </p>
+          <span class="purpose__label">種類</span>
+          <p>
+            コーポレートサイト、マッチングサイト、ECサイト、採用サイト、ポータルサイト、多言語サイト、LPなど
+          </p>
+          <br />
+          <span class="purpose__label">業界</span>
+          <p>
+            工務店・建築、旅館・ホテル、歯科医院、士業、美容室、アパレル、保育園、ブライダル、大学、整体・整骨院など
+          </p>
+          <p class="summary-text text-center font-bold">
+            制作会社によって得意不得意があるから、自社の業界や目的、予算にぴったりの1社を見つけることが難しい....
+          </p>
+        </div>
+      </section>
+
+      <!-- so -->
+      <section class="so">
+        <div class="so_inner wrap">
+          <p class="strength__text--heading m-x-auto font-bold section-heading">
+            だから！
+          </p>
+          <p
+            class="strength__text--leading text-center font-bold section-leading"
+          >
+            制作会社を探すには複数社の<br />見積書を比較することが大切です
+          </p>
+          <div class="so__flex--wrap flex m-x-auto">
+            <div class="so__flex--item flex">
+              <img src="./images/ph_front01.png" alt="ph_front01" srcset="" />
+              <div>
+                <p class="flex-heading">強み・弱みを把握できる</p>
+                <p>
+                  制作会社がどんなことを強みとし、ホームページを制作してくれるのかを把握した上で業者選定ができます。特定の業界に特化した制作会社も多いので、色々な制作会社の強みと弱みを把握できます。
+                </p>
+              </div>
+            </div>
+            <div class="so__flex--item flex">
+              <img src="./images/ph_front02.png" alt="ph_front02" srcset="" />
+              <div>
+                <p class="flex-heading">費用・相場を把握できる</p>
+                <p>
+                  相見積もりを取らずに発注する場合、その会社の見積額が適切かわからないというリスクがあります。一括見積もりをすることで、およその相場を把握した上で、業者選定することができます。
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="cv-button font-bold text-center m-x-auto"
+            ><span>無料で一括見積する</span></a
+          >
+        </div>
+      </section>
+
+      <!-- guide -->
+      <section class="guide">
+        <div class="wrap">
+          <p class="strength__text--heading m-x-auto font-bold section-heading">
+            比較ビズのご案内
+          </p>
+          <p
+            class="strength__text--leading text-center font-bold section-leading"
+          >
+            カンタンに探せる！<br />比較ビズの一括見積もりの3つの特徴
+          </p>
+          <div class="guide__flex--wrap flex">
+            <div class="guide__flex--item">
+              <img src="./images/ph_front03.png" alt="ph_front03" />
+              <div class="flex-padding">
+                <h2 class="flex-heading">
+                  手間を掛けずに<br />複数の見積書がもらえる
+                </h2>
+                <p>
+                  従業員数人の制作会社から、数百人の制作会社まで、大小様々な制作会社が登録しているので、多種多様な見積書を比較することができます。
+                </p>
+                <span class="guide__flex--number font-bold">01</span>
+              </div>
+            </div>
+            <div class="guide__flex--item">
+              <img src="./images/ph_front04.png" alt="ph_front04" />
+              <div class="flex-padding">
+                <h2 class="flex-heading">
+                  提案件数や連絡手段を<br />自由に設定できる
+                </h2>
+                <p>
+                  5社～30社までの間で自由に提案件数を設定でき、連絡手段をメールか電話かで選択することができるので、営業電話が鳴り止まない、といったことはありません。
+                </p>
+                <span class="guide__flex--number font-bold">02</span>
+              </div>
+            </div>
+            <div class="guide__flex--item">
+              <img src="./images/ph_front05.png" alt="ph_front05" />
+              <div class="flex-padding">
+                <h2 class="flex-heading">
+                  制作会社を一元管理して<br />直接やり取りできる
+                </h2>
+                <p>
+                  直接会ったり電話したりと自由に打合せができ、制作会社を比較ビズ内で一元管理した上で、メッセージを送信できるので、効率よく制作会社を探せます
+                </p>
+                <span class="guide__flex--number font-bold">03</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- comparison -->
+      <section class="comparison">
+        <div class="wrap">
+          <p class="strength__text--heading m-x-auto font-bold section-heading">
+            比較ビズのココが凄い！
+          </p>
+          <p
+            class="strength__text--leading text-center font-bold section-leading"
+          >
+            比較ビズと他社サービスとの違い
+          </p>
+          <div class="comparison__flex--wrap flex m-x-auto">
+            <div class="comparison__flex--item">
+              <h2 class="flex-heading">
+                クラウドソーシングのメリット・デメリット
+              </h2>
+              <ul class="comparison__flexlists">
+                <li class="comparison__flexlist--green">
+                  主にフリーランスが対応するので価格が安い
+                </li>
+                <li class="comparison__flexlist--green">
+                  依頼に対しての提案件数が集まりやすい
+                </li>
+                <li class="comparison__flexlist--red">
+                  対面や電話でのやり取りができない
+                </li>
+                <li class="comparison__flexlist--red">
+                  主に個人事業主なのでどうしても品質が低くなりがち
+                </li>
+                <li class="comparison__flexlist--red">
+                  電話でのサポートをしてくれない
+                </li>
+              </ul>
+            </div>
+            <div class="comparison__flex--item">
+              <h2 class="flex-heading">紹介会社のメリット・デメリット</h2>
+              <ul class="comparison__flexlists">
+                <li class="comparison__flexlist--green">
+                  仲介してくれるので提案が早く集まりやすい
+                </li>
+                <li class="comparison__flexlist--green">
+                  発注者と受注者のサポートが充実している
+                </li>
+                <li class="comparison__flexlist--red">
+                  広告費を多く払ってるくれる会社を紹介されがち
+                </li>
+                <li class="comparison__flexlist--red">
+                  紹介料（成果報酬料）が見積書に上乗せされがち
+                </li>
+                <li class="comparison__flexlist--red">
+                  大きい規模の制作会社からの提案に偏りがち
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="summary-text text-center font-bold">
+            比較ビズは制作会社と直接会ったりして自由にやり取りでき、基本的に法人登記した会社からしか提案が入りません。また電話でのサポートを行っております。紹介会社は契約すると制作会社側に契約金の5～10%請求するため、見積書にその分が上乗せされ、発注者側に負担がいくケースがあります。比較ビズは制作会社に毎月の広告費を頂いているため、こういった問題が起きづらくなっています。
+          </p>
+          <a href="#" class="cv-button font-bold text-center m-x-auto"
+            ><span>無料で一括見積する</span></a
+          >
+        </div>
+      </section>
+    </main>
   </body>
 </html>
