@@ -16,6 +16,8 @@ body {
 a {
   text-decoration: none;
   color: #333; }
+  a:hover {
+    text-decoration: underline; }
 
 img {
   display: block; }
@@ -342,5 +344,116 @@ ul {
     content: "\f00c";
     font-weight: 900;
     color: #db4545; }
+
+/* step section */
+.step {
+  background-color: #f1f7f7; }
+
+.step__flex--wrap {
+  justify-content: space-between; }
+
+.step__flex--item {
+  width: 32%;
+  background-color: #fff;
+  border-radius: 5px; }
+  .step__flex--item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0; }
+  .step__flex--item div {
+    position: relative; }
+  .step__flex--item .flex-heading {
+    line-height: 1.4; }
+  .step__flex--item p {
+    font-size: 1.3rem;
+    line-height: 1.8; }
+
+.step__flex--number {
+  font-size: 5rem;
+  position: absolute;
+  top: -0.2em;
+  right: 0;
+  font-family: "League Gothice";
+  color: #dadada; }
+
+/* Q&A */
+.qa__flex--wrap {
+  width: 90%;
+  gap: 30px; }
+
+.qa__flex--item {
+  width: 50%; }
+
+.qa__label--question {
+  background-color: #cc6969;
+  color: #fff;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 2rem; }
+
+.qa__label--answer {
+  background-color: #178fbc;
+  color: #fff;
+  padding: 2px 10px;
+  font-size: 2rem;
+  position: absolute;
+  left: 0.4em; }
+
+.qa__text--question {
+  font-size: 1.6rem;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 50px; }
+  .qa__text--question.arrow-down::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    font-weight: bold;
+    position: absolute;
+    right: 0.4em; }
+  .qa__text--question.arrow-up::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f106";
+    font-weight: bold;
+    position: absolute;
+    right: 0.4em; }
+  .qa__text--question:hover {
+    color: #178fbc; }
+
+.qa__text--answer {
+  padding: 20px;
+  padding-left: 55px;
+  background-color: #f7f7f7;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  position: relative;
+  margin-top: -25px;
+  display: none; }
+
+/* footer */
+.footer {
+  background-color: #f7f7f7; }
+
+.footer__flex--wrap {
+  width: 80%;
+  justify-content: space-evenly; }
+  .footer__flex--wrap dt {
+    font-size: 1.6rem;
+    margin-bottom: 20px; }
+  .footer__flex--wrap dd {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    margin-left: 10px; }
+
+.footer__flex--wrap2 {
+  width: 70%;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  justify-content: center;
+  gap: 20px; }
+
+.footer__text--copyrights {
+  font-size: 1.3rem;
+  display: block;
+  margin-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */
