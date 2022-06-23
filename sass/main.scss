@@ -18,6 +18,9 @@
   background-size: cover;
   background-position: center;
   height: 750px;
+  @include mq(sm) {
+    background-position: 60%;
+  }
 }
 .mainvisual__inner {
   padding-top: 50px;
@@ -33,6 +36,10 @@
   width: 55%;
   max-width: 600px;
   margin: 50px 0 20px;
+  @include mq(sm) {
+    width: 80%;
+    margin: 25px 0 50px;
+  }
 }
 .mainvisual__label {
   color: #fff;
@@ -51,6 +58,10 @@
 .mainvisual__image--clowns {
   width: 40%;
   max-width: 500px;
+  @include mq(sm) {
+    width: 70%;
+    margin-top: 25px;
+  }
 }
 .mainvisual__text {
   color: #fff;
@@ -61,6 +72,9 @@
   padding: 12px 10px;
   margin: 32px 0 0 10px;
   letter-spacing: 0.05em;
+  @include mq(sm) {
+    display: none;
+  }
 }
 .mainvisual__logos--wrap {
   display: flex;
@@ -87,6 +101,10 @@
   gap: 30px;
   width: 90%;
   align-items: center;
+  @include mq(sm) {
+    display: block;
+    width: 100%;
+  }
 }
 .strength__flex--item {
   width: 50%;
@@ -96,9 +114,24 @@
     font-size: 1.3rem;
     line-height: 1.8;
   }
+  @include mq(sm) {
+    width: 100%;
+    .flex-heading {
+      text-align: center;
+    }
+    .flex {
+      display: block;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
 }
 .strength__flex--left {
   background-color: #ecf8f8;
+  @include mq(sm) {
+    margin-bottom: 20px;
+  }
 }
 .strength__flex--right {
   background-color: #f8efec;
@@ -113,6 +146,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  @include mq(sm) {
+    display: block;
+    width: 100%;
+  }
 }
 .purpose__flex--item {
   background-color: #fff;
@@ -120,16 +157,34 @@
   border-radius: 10px;
   .flex {
     margin-top: initial;
+    img {
+      width: 64px;
+      height: 64px;
+    }
   }
-  img {
-    width: 64px;
-    height: 64px;
+  @include mq(sm) {
+    width: 100%;
+    &:not(last-child) {
+      margin-bottom: 20px;
+    }
+    .flex {
+      display: block;
+      img {
+        margin: 0 auto;
+        width: 128px;
+        height: 128px;
+      }
+    }
   }
 }
 .purpose__flextext--first {
   font-size: 1.6rem;
   line-height: 1.4;
   padding-left: 15px;
+  @include mq(sm) {
+    text-align: center;
+    padding-left: 0;
+  }
 }
 .purpose__flextext--second {
   background-color: #fff0e7;
@@ -154,6 +209,19 @@
   & + p {
     font-size: 1.3rem;
     display: inline-block;
+    @include mq(sm) {
+      line-height: 1.4;
+    }
+  }
+  @include mq(sm) {
+    display: block;
+    text-align: center;
+    max-width: 450px;
+    & + p {
+      font-size: 1.3rem;
+      display: inline-block;
+      line-height: 1.4;
+    }
   }
 }
 
@@ -161,6 +229,10 @@
 .so__flex--wrap {
   width: 90%;
   gap: 30px;
+  @include mq(sm) {
+    display: block;
+    width: 100%;
+  }
 }
 .so__flex--item {
   width: 50%;
@@ -178,6 +250,19 @@
       line-height: 1.8;
     }
   }
+  @include mq(sm) {
+    display: block;
+    width: 100%;
+    img {
+      margin: 0 auto;
+    }
+    div {
+      padding-left: 0;
+      .flex-heading {
+        text-align: center;
+      }
+    }
+  }
 }
 
 /* guide section */
@@ -186,6 +271,9 @@
 }
 .guide__flex--wrap {
   justify-content: space-between;
+  @include mq(sm) {
+    display: block;
+  }
 }
 .guide__flex--item {
   width: 32%;
@@ -206,6 +294,12 @@
     font-size: 1.3rem;
     line-height: 1.8;
   }
+  @include mq(sm) {
+    width: 100%;
+    &:not(last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 .guide__flex--number {
   font-size: 5rem;
@@ -220,12 +314,21 @@
 .comparison__flex--wrap {
   width: 90%;
   gap: 30px;
+  @include mq(sm) {
+    display: block;
+  }
 }
 .comparison__flex--item {
   width: 50%;
   .flex-heading {
     border-bottom: 3px solid #bcd0d2;
     padding-bottom: 15px;
+  }
+  @include mq(sm) {
+    width: 100%;
+    &:first-of-type {
+      margin-bottom: 40px;
+    }
   }
 }
 .comparison__flexlists {
@@ -242,6 +345,9 @@
 }
 .comparison__flexlist--green {
   color: #429c9d;
+  display: flex;
+  gap: 10px;
+  line-height: 1.4;
   &::before {
     font-family: "Font Awesome 5 Free";
     content: "\f00c";
@@ -251,6 +357,9 @@
 }
 .comparison__flexlist--red {
   color: #db4545;
+  display: flex;
+  gap: 10px;
+  line-height: 1.4;
   &::before {
     font-family: "Font Awesome 5 Free";
     content: "\f00c";
@@ -265,6 +374,9 @@
 }
 .step__flex--wrap {
   justify-content: space-between;
+  @include mq(sm) {
+    display: block;
+  }
 }
 .step__flex--item {
   width: 32%;
@@ -285,6 +397,12 @@
     font-size: 1.3rem;
     line-height: 1.8;
   }
+  @include mq(sm) {
+    width: 100%;
+    &:not(last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 .step__flex--number {
   font-size: 5rem;
@@ -299,9 +417,17 @@
 .qa__flex--wrap {
   width: 90%;
   gap: 30px;
+  @include mq(sm) {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
 }
 .qa__flex--item {
   width: 50%;
+  @include mq(sm) {
+    width: 100%;
+  }
 }
 .qa__label--question {
   background-color: #cc6969;
@@ -309,6 +435,11 @@
   padding: 10px;
   margin-right: 10px;
   font-size: 2rem;
+  @include mq(sm) {
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+  }
 }
 .qa__label--answer {
   background-color: #178fbc;
@@ -323,6 +454,7 @@
   position: relative;
   cursor: pointer;
   margin-bottom: 50px;
+  padding-top: 10px;
   &.arrow-down {
     &::after {
       font-family: "Font Awesome 5 Free";
@@ -344,6 +476,11 @@
   &:hover {
     color: #178fbc;
   }
+  @include mq(sm) {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 50px;
+  }
 }
 .qa__text--answer {
   padding: 20px;
@@ -354,6 +491,9 @@
   position: relative;
   margin-top: -25px;
   display: none;
+  @include mq(sm) {
+    margin-top: 5px;
+  }
 }
 
 /* footer */
@@ -372,6 +512,23 @@
     margin-bottom: 15px;
     margin-left: 10px;
   }
+  @include mq(sm) {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    dl {
+      text-align: center;
+    }
+    dd {
+      margin-left: 0;
+    }
+  }
+}
+.footer__flex--item {
+  @include mq(sm) {
+    width: 48%;
+  }
 }
 .footer__flex--wrap2 {
   width: 70%;
@@ -379,6 +536,10 @@
   font-size: 1.3rem;
   justify-content: center;
   gap: 20px;
+  @include mq(sm) {
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 .footer__text--copyrights {
   font-size: 1.3rem;
